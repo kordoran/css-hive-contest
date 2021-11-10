@@ -49,7 +49,7 @@ header {
     width: 100vw;
     height: 50%;
     font-family: 'Raleway', sans-serif;
-    font-size: 10vh;
+    font-size: 25vh;
     color: #17D7A0;
     text-align: center;
     background-color: #544179;
@@ -59,12 +59,14 @@ section {
     height: 80%;
 }
 
-@keyframes sqr-colorchange {
+/********************************************* DO ********************************************/
+
+@keyframes sqrdo-colorchange {
     from {background: #32C1CD;}
     to {background: radial-gradient(circle, #6166B3 0%, #32C1CD 100%);}
 }
 
-.sqr {
+.sqr-do {
     display: inline-block;
     width: 5%;
     height: 95%;
@@ -73,16 +75,76 @@ section {
     background-color: #32C1CD;
 }
 
-.sqr-row {
+.sqr-do-row {
     height: 5vw;
     width: 95vw;
     margin: 0.1% auto;
     text-align: center;
 }
 
-.clrd.sqr {
+.clrd.sqr-do {
+    background-color: white;
+    animation-name: sqrdo-colorchange;
+    animation-duration: 120ms;
+    animation-iteration-count: infinite;
+}
+
+/********************************************* NOT ********************************************/
+
+@keyframes sqrnot-colorchange {
+    from {background: #17D7A0;}
+    to {background: radial-gradient(circle, #6166B3 0%, #17D7A0 100%);}
+}
+
+.sqr-not {
+    display: inline-block;
+    width: 5%;
+    height: 95%;
+    margin: 0;
+    border: 0;
+    background-color: #17D7A0;
+}
+
+.sqr-not-row {
+    height: 5vw;
+    width: 95vw;
+    margin: 0.1% auto;
+    text-align: center;
+}
+
+.clrd.sqr-not {
+    background-color: white;
+    animation-name: sqrnot-colorchange;
+    animation-duration: 120ms;
+    animation-iteration-count: infinite;
+}
+
+/********************************************* DIVS ********************************************/
+
+@keyframes sqrdiv-colorchange {
+    from {background: #32C1CD;}
+    to {background: radial-gradient(circle, #6166B3 0%, #32C1CD 100%);}
+}
+
+.sqr-div {
+    display: inline-block;
+    width: 5%;
+    height: 95%;
+    margin: 0;
+    border: 0;
     background-color: #32C1CD;
-    animation-name: sqr-colorchange;
+}
+
+.sqr-div-row {
+    height: 5vw;
+    width: 95vw;
+    margin: 0.1% auto;
+    text-align: center;
+}
+
+.clrd.sqr-div {
+    background-color: white;
+    animation-name: sqrdiv-colorchange;
     animation-duration: 120ms;
     animation-iteration-count: infinite;
 }
