@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+  
+    background: transparent;
+  
+    font-family: inherit;
+    
+    text-decoration: none;
+}
+  
+ol, ul, li {
+    list-style:none;
+    display:block;
+}
+  
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+  
+a img {
+    border: none
+}
+  
+button, a {
+    cursor: pointer;
+    color: inherit
+}
+  
+textarea {
+    resize: none
+}
+  
+button, input, textarea, select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10vh;
+    color: #17D7A0;
+    text-align: center;
+    background-color: #544179;
+}
+
+section {
+    height: 80%;
+}
+
+@keyframes sqr-colorchange {
+    from {background: #32C1CD;}
+    to {background: radial-gradient(circle, #6166B3 0%, #32C1CD 100%);}
+}
+
+.sqr {
+    display: inline-block;
+    width: 5%;
+    height: 95%;
+    margin: 0;
+    border: 0;
+    background-color: #32C1CD;
+}
+
+.sqr-row {
+    height: 5vw;
+    width: 95vw;
+    margin: 0.1% auto;
+    text-align: center;
+}
+
+.clrd.sqr {
+    background-color: #32C1CD;
+    animation-name: sqr-colorchange;
+    animation-duration: 120ms;
+    animation-iteration-count: infinite;
+}
