@@ -42,37 +42,28 @@ button, input, textarea, select {
 }
 
 body {
-    box-sizing: border-box;
-}
-
-header {
-    width: 100vw;
-    height: 50%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25vh;
-    color: #17D7A0;
-    text-align: center;
-    background-color: #544179;
-}
-
-section {
-    height: 80%;
+    background: linear-gradient(90deg, #144BE0 0%, #6166B3 72%);
 }
 
 /********************************************* DO ********************************************/
 
+#topsection {
+    padding-top: 5%;
+}
+
 @keyframes sqrdo-colorchange {
     from {background: #32C1CD;}
-    to {background: radial-gradient(circle, #6166B3 0%, #32C1CD 100%);}
+    to {background: transparent;}
 }
 
 .sqr-do {
     display: inline-block;
     width: 5%;
     height: 95%;
-    margin: 0;
-    border: 0;
-    background-color: #32C1CD;
+    animation-name: sqrdo-colorchange;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .sqr-do-row {
@@ -82,10 +73,14 @@ section {
     text-align: center;
 }
 
+@keyframes sqrdoclrd-colorchange {
+    from {background: transparent;}
+    to {background: radial-gradient(circle, #17D7A0 0%, transparent 75%);}
+}
+
 .clrd.sqr-do {
-    background-color: white;
-    animation-name: sqrdo-colorchange;
-    animation-duration: 120ms;
+    animation-name: sqrdoclrd-colorchange;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
@@ -100,8 +95,6 @@ section {
     display: inline-block;
     width: 5%;
     height: 95%;
-    margin: 0;
-    border: 0;
     background-color: #17D7A0;
 }
 
@@ -113,26 +106,51 @@ section {
 }
 
 .clrd.sqr-not {
-    background-color: white;
     animation-name: sqrnot-colorchange;
     animation-duration: 120ms;
     animation-iteration-count: infinite;
 }
+/********************************* UNDERESTIMATE THE POWER OF ********************************/
+
+#midsection {
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    color: #17D7A0;
+    text-align: center;
+}
+
+#underest {
+    padding-top: 5%;
+    width: 100vw;
+    font-size: 10vw;
+}
+
+#power {
+    width: 100vw;
+    font-size: 20vw;
+}
+
+p span {
+    color: #32C1CD;
+}
+
 
 /********************************************* DIVS ********************************************/
 
 @keyframes sqrdiv-colorchange {
-    from {background: #32C1CD;}
-    to {background: radial-gradient(circle, #6166B3 0%, #32C1CD 100%);}
+    from {background: linear-gradient(90deg, rgba(246,45,45,1) 0%, rgba(224,208,20,1) 17%, rgba(100,211,55,1) 35%, rgba(37,224,246,1) 52%, rgba(83,78,238,1) 72%, rgba(242,27,199,1) 91%, rgba(226,38,57,1) 107%);}
+    to {background: transparent;}
+}
+
+#bottom-section {
+    padding-bottom: 5%;
 }
 
 .sqr-div {
     display: inline-block;
     width: 5%;
     height: 95%;
-    margin: 0;
-    border: 0;
-    background-color: #32C1CD;
+    background: linear-gradient(90deg, rgba(246,45,45,1) 0%, rgba(224,208,20,1) 17%, rgba(100,211,55,1) 35%, rgba(37,224,246,1) 52%, rgba(83,78,238,1) 72%, rgba(242,27,199,1) 91%, rgba(226,38,57,1) 107%);;
 }
 
 .sqr-div-row {
@@ -143,8 +161,7 @@ section {
 }
 
 .clrd.sqr-div {
-    background-color: white;
     animation-name: sqrdiv-colorchange;
-    animation-duration: 120ms;
+    animation-duration: 200ms;
     animation-iteration-count: infinite;
 }
